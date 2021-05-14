@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		7D20AF79264EBBB2003BF480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D20AF77264EBBB2003BF480 /* LaunchScreen.storyboard */; };
 		7D20AF84264EBBB2003BF480 /* BackToNormalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF83264EBBB2003BF480 /* BackToNormalTests.swift */; };
 		7D20AF8F264EBBB2003BF480 /* BackToNormalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF8E264EBBB2003BF480 /* BackToNormalUITests.swift */; };
+		7D20AF9D264EBC1A003BF480 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D20AF9C264EBC1A003BF480 /* README.md */; };
+		7D20AF9F264EBC59003BF480 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF9E264EBC59003BF480 /* Event.swift */; };
+		7D20AFA1264EC26A003BF480 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AFA0264EC26A003BF480 /* EventCell.swift */; };
+		7D20AFA4264EC2E4003BF480 /* UtiliKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7D20AFA3264EC2E4003BF480 /* UtiliKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 		7D20AF8A264EBBB2003BF480 /* BackToNormalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackToNormalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D20AF8E264EBBB2003BF480 /* BackToNormalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackToNormalUITests.swift; sourceTree = "<group>"; };
 		7D20AF90264EBBB2003BF480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D20AF9C264EBC1A003BF480 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7D20AF9E264EBC59003BF480 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7D20AFA0264EC26A003BF480 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D20AFA4264EC2E4003BF480 /* UtiliKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +87,7 @@
 		7D20AF60264EBBB0003BF480 = {
 			isa = PBXGroup;
 			children = (
+				7D20AF9C264EBC1A003BF480 /* README.md */,
 				7D20AF6B264EBBB0003BF480 /* BackToNormal */,
 				7D20AF82264EBBB2003BF480 /* BackToNormalTests */,
 				7D20AF8D264EBBB2003BF480 /* BackToNormalUITests */,
@@ -103,6 +112,8 @@
 				7D20AF6E264EBBB0003BF480 /* SceneDelegate.swift */,
 				7D20AF70264EBBB0003BF480 /* ViewController.swift */,
 				7D20AF72264EBBB0003BF480 /* Main.storyboard */,
+				7D20AF9E264EBC59003BF480 /* Event.swift */,
+				7D20AFA0264EC26A003BF480 /* EventCell.swift */,
 				7D20AF75264EBBB2003BF480 /* Assets.xcassets */,
 				7D20AF77264EBBB2003BF480 /* LaunchScreen.storyboard */,
 				7D20AF7A264EBBB2003BF480 /* Info.plist */,
@@ -144,6 +155,9 @@
 			dependencies = (
 			);
 			name = BackToNormal;
+			packageProductDependencies = (
+				7D20AFA3264EC2E4003BF480 /* UtiliKit */,
+			);
 			productName = BackToNormal;
 			productReference = 7D20AF69264EBBB0003BF480 /* BackToNormal.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 7D20AF60264EBBB0003BF480;
+			packageReferences = (
+				7D20AFA2264EC2E4003BF480 /* XCRemoteSwiftPackageReference "iOS-UtiliKit" */,
+			);
 			productRefGroup = 7D20AF6A264EBBB0003BF480 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +250,7 @@
 			files = (
 				7D20AF79264EBBB2003BF480 /* LaunchScreen.storyboard in Resources */,
 				7D20AF76264EBBB2003BF480 /* Assets.xcassets in Resources */,
+				7D20AF9D264EBC1A003BF480 /* README.md in Resources */,
 				7D20AF74264EBBB0003BF480 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D20AF9F264EBC59003BF480 /* Event.swift in Sources */,
 				7D20AF71264EBBB0003BF480 /* ViewController.swift in Sources */,
+				7D20AFA1264EC26A003BF480 /* EventCell.swift in Sources */,
 				7D20AF6D264EBBB0003BF480 /* AppDelegate.swift in Sources */,
 				7D20AF6F264EBBB0003BF480 /* SceneDelegate.swift in Sources */,
 			);
@@ -593,6 +613,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D20AFA2264EC2E4003BF480 /* XCRemoteSwiftPackageReference "iOS-UtiliKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BottleRocketStudios/iOS-UtiliKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D20AFA3264EC2E4003BF480 /* UtiliKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D20AFA2264EC2E4003BF480 /* XCRemoteSwiftPackageReference "iOS-UtiliKit" */;
+			productName = UtiliKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D20AF61264EBBB0003BF480 /* Project object */;
 }

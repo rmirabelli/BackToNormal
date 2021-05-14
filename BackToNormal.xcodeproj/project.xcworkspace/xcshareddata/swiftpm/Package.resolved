@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UtiliKit",
+        "repositoryURL": "https://github.com/BottleRocketStudios/iOS-UtiliKit",
+        "state": {
+          "branch": null,
+          "revision": "a08ebf16349875ca9adfade81378b3979aead76b",
+          "version": "1.7.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
