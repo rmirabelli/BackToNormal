@@ -19,6 +19,12 @@
 		7D20AF9F264EBC59003BF480 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF9E264EBC59003BF480 /* Event.swift */; };
 		7D20AFA1264EC26A003BF480 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AFA0264EC26A003BF480 /* EventCell.swift */; };
 		7D20AFA4264EC2E4003BF480 /* UtiliKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7D20AFA3264EC2E4003BF480 /* UtiliKit */; };
+		7D20AFAD264EF2D8003BF480 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D20AFAC264EF2D8003BF480 /* WidgetKit.framework */; };
+		7D20AFAF264EF2D8003BF480 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D20AFAE264EF2D8003BF480 /* SwiftUI.framework */; };
+		7D20AFB2264EF2D8003BF480 /* We_re_Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AFB1264EF2D8003BF480 /* We_re_Back.swift */; };
+		7D20AFB4264EF2DA003BF480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D20AFB3264EF2DA003BF480 /* Assets.xcassets */; };
+		7D20AFB8264EF2DA003BF480 /* We're BackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D20AFAA264EF2D8003BF480 /* We're BackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D20AFBE264EF30A003BF480 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF9E264EBC59003BF480 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,28 @@
 			remoteGlobalIDString = 7D20AF68264EBBB0003BF480;
 			remoteInfo = BackToNormal;
 		};
+		7D20AFB6264EF2DA003BF480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D20AF61264EBBB0003BF480 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D20AFA9264EF2D8003BF480;
+			remoteInfo = "We're BackExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D20AFBC264EF2DA003BF480 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7D20AFB8264EF2DA003BF480 /* We're BackExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D20AF69264EBBB0003BF480 /* BackToNormal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackToNormal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +83,14 @@
 		7D20AF9C264EBC1A003BF480 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D20AF9E264EBC59003BF480 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7D20AFA0264EC26A003BF480 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		7D20AFA5264EF279003BF480 /* BackToNormal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BackToNormal.entitlements; sourceTree = "<group>"; };
+		7D20AFAA264EF2D8003BF480 /* We're BackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "We're BackExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D20AFAC264EF2D8003BF480 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7D20AFAE264EF2D8003BF480 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7D20AFB1264EF2D8003BF480 /* We_re_Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = We_re_Back.swift; sourceTree = "<group>"; };
+		7D20AFB3264EF2DA003BF480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D20AFB5264EF2DA003BF480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D20AFBD264EF2E6003BF480 /* We're BackExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "We're BackExtension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,16 +116,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D20AFA7264EF2D8003BF480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D20AFAF264EF2D8003BF480 /* SwiftUI.framework in Frameworks */,
+				7D20AFAD264EF2D8003BF480 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7D20AF60264EBBB0003BF480 = {
 			isa = PBXGroup;
 			children = (
+				7D20AFBD264EF2E6003BF480 /* We're BackExtension.entitlements */,
 				7D20AF9C264EBC1A003BF480 /* README.md */,
 				7D20AF6B264EBBB0003BF480 /* BackToNormal */,
 				7D20AF82264EBBB2003BF480 /* BackToNormalTests */,
 				7D20AF8D264EBBB2003BF480 /* BackToNormalUITests */,
+				7D20AFB0264EF2D8003BF480 /* We're Back */,
+				7D20AFAB264EF2D8003BF480 /* Frameworks */,
 				7D20AF6A264EBBB0003BF480 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +148,7 @@
 				7D20AF69264EBBB0003BF480 /* BackToNormal.app */,
 				7D20AF7F264EBBB2003BF480 /* BackToNormalTests.xctest */,
 				7D20AF8A264EBBB2003BF480 /* BackToNormalUITests.xctest */,
+				7D20AFAA264EF2D8003BF480 /* We're BackExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +156,7 @@
 		7D20AF6B264EBBB0003BF480 /* BackToNormal */ = {
 			isa = PBXGroup;
 			children = (
+				7D20AFA5264EF279003BF480 /* BackToNormal.entitlements */,
 				7D20AF6C264EBBB0003BF480 /* AppDelegate.swift */,
 				7D20AF6E264EBBB0003BF480 /* SceneDelegate.swift */,
 				7D20AF70264EBBB0003BF480 /* ViewController.swift */,
@@ -139,6 +188,25 @@
 			path = BackToNormalUITests;
 			sourceTree = "<group>";
 		};
+		7D20AFAB264EF2D8003BF480 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D20AFAC264EF2D8003BF480 /* WidgetKit.framework */,
+				7D20AFAE264EF2D8003BF480 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D20AFB0264EF2D8003BF480 /* We're Back */ = {
+			isa = PBXGroup;
+			children = (
+				7D20AFB1264EF2D8003BF480 /* We_re_Back.swift */,
+				7D20AFB3264EF2DA003BF480 /* Assets.xcassets */,
+				7D20AFB5264EF2DA003BF480 /* Info.plist */,
+			);
+			path = "We're Back";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,10 +217,12 @@
 				7D20AF65264EBBB0003BF480 /* Sources */,
 				7D20AF66264EBBB0003BF480 /* Frameworks */,
 				7D20AF67264EBBB0003BF480 /* Resources */,
+				7D20AFBC264EF2DA003BF480 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7D20AFB7264EF2DA003BF480 /* PBXTargetDependency */,
 			);
 			name = BackToNormal;
 			packageProductDependencies = (
@@ -198,6 +268,23 @@
 			productReference = 7D20AF8A264EBBB2003BF480 /* BackToNormalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7D20AFA9264EF2D8003BF480 /* We're BackExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D20AFB9264EF2DA003BF480 /* Build configuration list for PBXNativeTarget "We're BackExtension" */;
+			buildPhases = (
+				7D20AFA6264EF2D8003BF480 /* Sources */,
+				7D20AFA7264EF2D8003BF480 /* Frameworks */,
+				7D20AFA8264EF2D8003BF480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "We're BackExtension";
+			productName = "We're BackExtension";
+			productReference = 7D20AFAA264EF2D8003BF480 /* We're BackExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +304,9 @@
 					7D20AF89264EBBB2003BF480 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 7D20AF68264EBBB0003BF480;
+					};
+					7D20AFA9264EF2D8003BF480 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -239,6 +329,7 @@
 				7D20AF68264EBBB0003BF480 /* BackToNormal */,
 				7D20AF7E264EBBB2003BF480 /* BackToNormalTests */,
 				7D20AF89264EBBB2003BF480 /* BackToNormalUITests */,
+				7D20AFA9264EF2D8003BF480 /* We're BackExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +357,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D20AFA8264EF2D8003BF480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D20AFB4264EF2DA003BF480 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +399,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7D20AFA6264EF2D8003BF480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D20AFBE264EF30A003BF480 /* Event.swift in Sources */,
+				7D20AFB2264EF2D8003BF480 /* We_re_Back.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -312,6 +420,11 @@
 			isa = PBXTargetDependency;
 			target = 7D20AF68264EBBB0003BF480 /* BackToNormal */;
 			targetProxy = 7D20AF8B264EBBB2003BF480 /* PBXContainerItemProxy */;
+		};
+		7D20AFB7264EF2DA003BF480 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D20AFA9264EF2D8003BF480 /* We're BackExtension */;
+			targetProxy = 7D20AFB6264EF2DA003BF480 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -454,8 +567,10 @@
 		7D20AF94264EBBB2003BF480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BackToNormal/BackToNormal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JT9WCF3HF;
 				INFOPLIST_FILE = BackToNormal/Info.plist;
@@ -473,8 +588,10 @@
 		7D20AF95264EBBB2003BF480 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BackToNormal/BackToNormal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JT9WCF3HF;
 				INFOPLIST_FILE = BackToNormal/Info.plist;
@@ -573,6 +690,50 @@
 			};
 			name = Release;
 		};
+		7D20AFBA264EF2DA003BF480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "We're BackExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JT9WCF3HF;
+				INFOPLIST_FILE = "We're Back/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rmirabelli.BackToNormal.We-re-Back";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D20AFBB264EF2DA003BF480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "We're BackExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JT9WCF3HF;
+				INFOPLIST_FILE = "We're Back/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rmirabelli.BackToNormal.We-re-Back";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -608,6 +769,15 @@
 			buildConfigurations = (
 				7D20AF9A264EBBB2003BF480 /* Debug */,
 				7D20AF9B264EBBB2003BF480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D20AFB9264EF2DA003BF480 /* Build configuration list for PBXNativeTarget "We're BackExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D20AFBA264EF2DA003BF480 /* Debug */,
+				7D20AFBB264EF2DA003BF480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
