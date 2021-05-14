@@ -18,6 +18,18 @@ struct Event: Codable {
 
     var image: UIImage? {
         switch imageName {
+        case "Phish":
+            return UIImage(named: "Phish")
+        case "DeadAndCo":
+            return UIImage(named: "DeadAndCo")
+        case "STS9":
+            return UIImage(named: "STS9")
+        case "UmphreysMcGee":
+            return UIImage(named: "UmphreysMcGee")
+        case "CoryWong":
+            return UIImage(named: "CoryWong")
+        case "BritFloyd":
+            return UIImage(named: "BritFloyd")
         default:
             return nil
         }
