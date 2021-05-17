@@ -30,8 +30,14 @@ struct Event: Codable {
             return UIImage(named: "CoryWong")
         case "BritFloyd":
             return UIImage(named: "BritFloyd")
+        case "TieDye":
+            return UIImage(named: "TieDye")
         default:
             return nil
         }
+    }
+
+    static var placeholder: Event {
+        Event(title: "Placeholder", date: Date(), imageURL: nil, imageName: "TieDye", location: "placeholder")
     }
 }
