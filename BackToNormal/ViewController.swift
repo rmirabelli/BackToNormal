@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // if we need to kill this list, kill it here.
-//        UserDefaults.standard.removeObject(forKey: "events")
+//        Event.clearValues()
         events = Event.getValues()
         if events.isEmpty {
             Event.createInitialValues()
