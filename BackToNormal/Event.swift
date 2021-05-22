@@ -43,8 +43,10 @@ extension Event {
         let gb = DateComponents(calendar: Calendar.current, year: 2021, month: 11, day: 13).date ?? Date()
         let arj = DateComponents(calendar: Calendar.current, year: 2021, month: 11, day: 18).date ?? Date()
         let boasl = DateComponents(calendar: Calendar.current, year: 2021, month: 10, day: 23).date ?? Date()
+        let boadfw = DateComponents(calendar: Calendar.current, year: 2021, month: 10, day: 9).date ?? Date()
         let wdw = DateComponents(calendar: Calendar.current, year: 2021, month: 7, day:16).date ?? Date()
         let rent = DateComponents(calendar: Calendar.current, year: 2022, month: 2, day:20).date ?? Date()
+        let vg = DateComponents(calendar: Calendar.current, year: 2021, month: 10, day:10).date ?? Date()
 
         let initialEvents = [
             Event(title: "STS9 Red Rocks Night 1", date: sts91, imageURL: nil, imageName: "STS9", location: "Red Rocks"),
@@ -58,9 +60,12 @@ extension Event {
             Event(title: "Drive By Truckers", date: dbt, imageURL: nil, imageName: "DriveByTruckers", location: "Grenada"),
             Event(title: "Goose", date: gb, imageURL: nil, imageName: "Goose", location: "HiFi Dallas"),
             Event(title: "BOA St Louis", date: boasl, imageURL: nil, imageName: "BOA", location: "St Louis"),
+            Event(title: "BOA DFW", date: boadfw, imageURL: nil, imageName: "BOA", location: "DFW"),
             Event(title: "All Region Jazz", date: arj, imageURL: nil, imageName: "ARJ", location: "Paschal HS"),
             Event(title: "Disneyworld", date: wdw, imageURL: nil, imageName: "WDW", location: "Orlando"),
-            Event(title: "RENT", date: rent, imageURL: nil, imageName: "RENT", location: "Fair Park Music Hall")
+            Event(title: "RENT", date: rent, imageURL: nil, imageName: "RENT", location: "Fair Park Music Hall"),
+            Event(title: "Interactive Van Gogh", date: vg, imageURL: nil, imageName: "VanGogh", location: "Unknown"),
+
         ].sorted { $0.date < $1.date }
         UserDefaults(suiteName: "group.rmirabelli.backtonormal")?.set(try? PropertyListEncoder().encode(initialEvents), forKey: "events")
     }
