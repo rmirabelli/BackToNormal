@@ -17,36 +17,7 @@ struct Event: Codable {
     let location: String
 
     var image: UIImage? {
-        switch imageName {
-        case "Phish":
-            return UIImage(named: "Phish")
-        case "DeadAndCo":
-            return UIImage(named: "DeadAndCo")
-        case "STS9":
-            return UIImage(named: "STS9")
-        case "UmphreysMcGee":
-            return UIImage(named: "UmphreysMcGee")
-        case "CoryWong":
-            return UIImage(named: "CoryWong")
-        case "BritFloyd":
-            return UIImage(named: "BritFloyd")
-        case "TieDye":
-            return UIImage(named: "TieDye")
-        case "Goose":
-            return UIImage(named: "Goose")
-        case "DriveByTruckers":
-            return UIImage(named: "DriveByTruckers")
-        case "BOA":
-            return UIImage(named: "BOA")
-        case "ARJ":
-            return UIImage(named: "ARJ")
-        case "WDW":
-            return UIImage(named: "WDW")
-        case "RENT":
-            return UIImage(named: "RENT")
-        default:
-            return nil
-        }
+        return UIImage(named: imageName ?? "")
     }
 
     static var placeholder: Event {
