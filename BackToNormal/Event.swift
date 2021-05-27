@@ -47,6 +47,8 @@ extension Event {
         let wdw = DateComponents(calendar: Calendar.current, year: 2021, month: 7, day:16).date ?? Date()
         let rent = DateComponents(calendar: Calendar.current, year: 2022, month: 2, day:20).date ?? Date()
         let vg = DateComponents(calendar: Calendar.current, year: 2021, month: 10, day:10).date ?? Date()
+        let bs = DateComponents(calendar: Calendar.current, year: 2021, month: 6, day:3).date ?? Date()
+        let hh = DateComponents(calendar: Calendar.current, year: 2021, month: 9, day:12).date ?? Date()
 
         let initialEvents = [
             Event(title: "STS9 Red Rocks Night 1", date: sts91, imageURL: nil, imageName: "STS9", location: "Red Rocks"),
@@ -65,6 +67,8 @@ extension Event {
             Event(title: "Disneyworld", date: wdw, imageURL: nil, imageName: "WDW", location: "Orlando"),
             Event(title: "RENT", date: rent, imageURL: nil, imageName: "RENT", location: "Fair Park Music Hall"),
             Event(title: "Interactive Van Gogh", date: vg, imageURL: nil, imageName: "VanGogh", location: "Unknown"),
+            Event(title: "Bobby Sparks", date: bs, imageURL: nil, imageName: "BobbySparks", location: "Bruton Theatre"),
+            Event(title: "Herbie Hancock", date: hh, imageURL: nil, imageName: "HerbieHancock", location: "Grand Prairie")
 
         ].sorted { $0.date < $1.date }
         UserDefaults(suiteName: "group.rmirabelli.backtonormal")?.set(try? PropertyListEncoder().encode(initialEvents), forKey: "events")
