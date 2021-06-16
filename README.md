@@ -14,3 +14,7 @@ A celebration of a return to normalcy
 -- TODO (APP)
         * create an input screen
         * use the date selector and highlight its best use
+
+DONATE INTENTS
+* https://developer.apple.com/wwdc21/10283
+* https://developer.apple.com/wwdc21/10231
