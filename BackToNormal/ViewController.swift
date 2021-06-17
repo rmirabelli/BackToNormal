@@ -42,7 +42,9 @@ class ViewController: UIViewController {
     }
 
     @objc func addItem() {
-        print("add")
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CreateEventViewController") {
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
 }

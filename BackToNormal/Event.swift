@@ -25,8 +25,6 @@ struct Event: Codable {
     }
 }
 
-
-
 extension Event {
 
     // this is horrible, but whatever.

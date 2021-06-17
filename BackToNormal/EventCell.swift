@@ -26,7 +26,11 @@ extension EventCell: Configurable {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         dateLabel.text = formatter.string(from: element.date)
-        locationLabel.text = element.location
+        if #available(iOS 15, *) {
+            locationLabel.attributedText = NSAttributedString(AttributedString("**somewhere**"))
+        } else {
+            locationLabel.text = element.location
+        }
         backgroundImage.image = element.image
         notesLabel.text = ""
     }

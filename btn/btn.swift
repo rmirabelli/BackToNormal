@@ -51,7 +51,7 @@ struct btnEntryView : View {
         ZStack {
             Image(entry.event.imageName ?? "")
                 .resizable()
-            Text(entry.event.title)
+            Text("_\(entry.event.title)_")
                 .foregroundColor(.white)
         }
     }

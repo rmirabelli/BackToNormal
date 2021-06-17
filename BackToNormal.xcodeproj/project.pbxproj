@@ -25,6 +25,7 @@
 		7D20AFCD2652CC1B003BF480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D20AFCC2652CC1B003BF480 /* Assets.xcassets */; };
 		7D20AFD12652CC1B003BF480 /* btnExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D20AFC32652CC19003BF480 /* btnExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7D20AFD82652CDEF003BF480 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF9E264EBC59003BF480 /* Event.swift */; };
+		7D93F269267B96B800FA05E5 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D93F268267B96B800FA05E5 /* CreateEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		7D20AFCE2652CC1B003BF480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D20AFD62652CC71003BF480 /* BackToNormal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BackToNormal.entitlements; sourceTree = "<group>"; };
 		7D20AFD72652CC9E003BF480 /* btnExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = btnExtension.entitlements; sourceTree = "<group>"; };
+		7D93F268267B96B800FA05E5 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				7D20AF6C264EBBB0003BF480 /* AppDelegate.swift */,
 				7D20AF6E264EBBB0003BF480 /* SceneDelegate.swift */,
 				7D20AF70264EBBB0003BF480 /* ViewController.swift */,
+				7D93F268267B96B800FA05E5 /* CreateEventViewController.swift */,
 				7D20AF72264EBBB0003BF480 /* Main.storyboard */,
 				7D20AF9E264EBC59003BF480 /* Event.swift */,
 				7D20AFA0264EC26A003BF480 /* EventCell.swift */,
@@ -380,6 +383,7 @@
 				7D20AFA1264EC26A003BF480 /* EventCell.swift in Sources */,
 				7D20AF6D264EBBB0003BF480 /* AppDelegate.swift in Sources */,
 				7D20AF6F264EBBB0003BF480 /* SceneDelegate.swift in Sources */,
+				7D93F269267B96B800FA05E5 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
