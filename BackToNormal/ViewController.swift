@@ -42,7 +42,14 @@ class ViewController: UIViewController {
     }
 
     @objc func addItem() {
+
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CreateEventViewController") {
+            let event = NSUserActivity(activityType: "com.rmirabelli.backtonormal.addItem")
+            event.title = "Something more for Back To Normal!"
+            event.isEligibleForPrediction = true
+            event.isEligibleForSearch = true
+            userActivity = event
+            event.becomeCurrent()
             navigationController?.pushViewController(vc, animated: true)
         }
     }
