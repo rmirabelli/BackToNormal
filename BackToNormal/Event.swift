@@ -72,6 +72,13 @@ extension Event {
         UserDefaults(suiteName: "group.rmirabelli.backtonormal")?.set(try? PropertyListEncoder().encode(initialEvents), forKey: "events")
     }
 
+    func saveToUserDefaults() {
+        var existing = Event.getValues()
+        existing.append(self)
+        let sorted = existing.sorted { $0.date < $1.date }
+        UserDefaults(suiteName: "group.rmirabelli.backtonormal")?.set(try? PropertyListEncoder().encode(sorted), forKey: "events")
+    }
+
     static func getValues() -> [Event] {
 
         if let data = UserDefaults(suiteName: "group.rmirabelli.backtonormal")?.value(forKey:"events") as? Data {
