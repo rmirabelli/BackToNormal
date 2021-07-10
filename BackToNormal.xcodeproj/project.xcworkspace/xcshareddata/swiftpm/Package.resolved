@@ -2,7 +2,7 @@
   "object": {
     "pins": [
       {
-        "package": "UtiliKit",
+        "package": "iOS-UtiliKit",
         "repositoryURL": "https://github.com/BottleRocketStudios/iOS-UtiliKit",
         "state": {
           "branch": null,
