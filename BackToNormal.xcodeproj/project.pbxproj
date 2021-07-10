@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D122F24268915A300F5BA34 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D122F23268915A300F5BA34 /* Intents.framework */; };
+		7D122F27268915A300F5BA34 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D122F26268915A300F5BA34 /* IntentHandler.swift */; };
+		7D122F3C268915A300F5BA34 /* CreateEventExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D122F22268915A300F5BA34 /* CreateEventExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D122F44268915BE00F5BA34 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7D122F43268915BE00F5BA34 /* Intents.intentdefinition */; };
+		7D122F46268916D700F5BA34 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF9E264EBC59003BF480 /* Event.swift */; };
+		7D122F4826891A3800F5BA34 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7D122F43268915BE00F5BA34 /* Intents.intentdefinition */; };
 		7D20AF6D264EBBB0003BF480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF6C264EBBB0003BF480 /* AppDelegate.swift */; };
 		7D20AF6F264EBBB0003BF480 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF6E264EBBB0003BF480 /* SceneDelegate.swift */; };
 		7D20AF71264EBBB0003BF480 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20AF70264EBBB0003BF480 /* ViewController.swift */; };
@@ -29,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7D122F3A268915A300F5BA34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7D20AF61264EBBB0003BF480 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D122F21268915A300F5BA34;
+			remoteInfo = CreateEventExtension;
+		};
 		7D20AF80264EBBB2003BF480 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7D20AF61264EBBB0003BF480 /* Project object */;
@@ -60,6 +73,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				7D20AFD12652CC1B003BF480 /* btnExtension.appex in Embed App Extensions */,
+				7D122F3C268915A300F5BA34 /* CreateEventExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +81,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7D122F22268915A300F5BA34 /* CreateEventExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CreateEventExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D122F23268915A300F5BA34 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		7D122F26268915A300F5BA34 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		7D122F28268915A300F5BA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D122F2E268915A300F5BA34 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		7D122F31268915A300F5BA34 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		7D122F34268915A300F5BA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7D122F36268915A300F5BA34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D122F43268915BE00F5BA34 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		7D122F4926891B3500F5BA34 /* CreateEventExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreateEventExtension.entitlements; sourceTree = "<group>"; };
 		7D20AF69264EBBB0003BF480 /* BackToNormal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackToNormal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D20AF6C264EBBB0003BF480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D20AF6E264EBBB0003BF480 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +120,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7D122F1F268915A300F5BA34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D122F24268915A300F5BA34 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D20AF66264EBBB0003BF480 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,6 +162,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D122F25268915A300F5BA34 /* CreateEventExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7D122F4926891B3500F5BA34 /* CreateEventExtension.entitlements */,
+				7D122F26268915A300F5BA34 /* IntentHandler.swift */,
+				7D122F28268915A300F5BA34 /* Info.plist */,
+				7D122F43268915BE00F5BA34 /* Intents.intentdefinition */,
+			);
+			path = CreateEventExtension;
+			sourceTree = "<group>";
+		};
+		7D122F30268915A300F5BA34 /* CreateEventExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				7D122F31268915A300F5BA34 /* IntentViewController.swift */,
+				7D122F33268915A300F5BA34 /* MainInterface.storyboard */,
+				7D122F36268915A300F5BA34 /* Info.plist */,
+			);
+			path = CreateEventExtensionUI;
+			sourceTree = "<group>";
+		};
 		7D20AF60264EBBB0003BF480 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +192,8 @@
 				7D20AF82264EBBB2003BF480 /* BackToNormalTests */,
 				7D20AF8D264EBBB2003BF480 /* BackToNormalUITests */,
 				7D20AFC92652CC19003BF480 /* btn */,
+				7D122F25268915A300F5BA34 /* CreateEventExtension */,
+				7D122F30268915A300F5BA34 /* CreateEventExtensionUI */,
 				7D20AFC42652CC19003BF480 /* Frameworks */,
 				7D20AF6A264EBBB0003BF480 /* Products */,
 			);
@@ -151,6 +206,7 @@
 				7D20AF7F264EBBB2003BF480 /* BackToNormalTests.xctest */,
 				7D20AF8A264EBBB2003BF480 /* BackToNormalUITests.xctest */,
 				7D20AFC32652CC19003BF480 /* btnExtension.appex */,
+				7D122F22268915A300F5BA34 /* CreateEventExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +252,8 @@
 			children = (
 				7D20AFC52652CC19003BF480 /* WidgetKit.framework */,
 				7D20AFC72652CC19003BF480 /* SwiftUI.framework */,
+				7D122F23268915A300F5BA34 /* Intents.framework */,
+				7D122F2E268915A300F5BA34 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,6 +271,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7D122F21268915A300F5BA34 /* CreateEventExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D122F42268915A300F5BA34 /* Build configuration list for PBXNativeTarget "CreateEventExtension" */;
+			buildPhases = (
+				7D122F1E268915A300F5BA34 /* Sources */,
+				7D122F1F268915A300F5BA34 /* Frameworks */,
+				7D122F20268915A300F5BA34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreateEventExtension;
+			productName = CreateEventExtension;
+			productReference = 7D122F22268915A300F5BA34 /* CreateEventExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7D20AF68264EBBB0003BF480 /* BackToNormal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D20AF93264EBBB2003BF480 /* Build configuration list for PBXNativeTarget "BackToNormal" */;
@@ -226,6 +301,7 @@
 			);
 			dependencies = (
 				7D20AFD02652CC1B003BF480 /* PBXTargetDependency */,
+				7D122F3B268915A300F5BA34 /* PBXTargetDependency */,
 			);
 			name = BackToNormal;
 			packageProductDependencies = (
@@ -294,9 +370,12 @@
 		7D20AF61264EBBB0003BF480 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					7D122F21268915A300F5BA34 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					7D20AF68264EBBB0003BF480 = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -333,11 +412,19 @@
 				7D20AF7E264EBBB2003BF480 /* BackToNormalTests */,
 				7D20AF89264EBBB2003BF480 /* BackToNormalUITests */,
 				7D20AFC22652CC19003BF480 /* btnExtension */,
+				7D122F21268915A300F5BA34 /* CreateEventExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7D122F20268915A300F5BA34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D20AF67264EBBB0003BF480 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,10 +461,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7D122F1E268915A300F5BA34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D122F44268915BE00F5BA34 /* Intents.intentdefinition in Sources */,
+				7D122F46268916D700F5BA34 /* Event.swift in Sources */,
+				7D122F27268915A300F5BA34 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D20AF65264EBBB0003BF480 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D122F4826891A3800F5BA34 /* Intents.intentdefinition in Sources */,
 				7D20AF9F264EBC59003BF480 /* Event.swift in Sources */,
 				7D20AF71264EBBB0003BF480 /* ViewController.swift in Sources */,
 				7D20AFA1264EC26A003BF480 /* EventCell.swift in Sources */,
@@ -415,6 +513,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7D122F3B268915A300F5BA34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D122F21268915A300F5BA34 /* CreateEventExtension */;
+			targetProxy = 7D122F3A268915A300F5BA34 /* PBXContainerItemProxy */;
+		};
 		7D20AF81264EBBB2003BF480 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7D20AF68264EBBB0003BF480 /* BackToNormal */;
@@ -433,6 +536,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7D122F33268915A300F5BA34 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D122F34268915A300F5BA34 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		7D20AF72264EBBB0003BF480 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -452,6 +563,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7D122F3D268915A300F5BA34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CreateEventExtension/CreateEventExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JT9WCF3HF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CreateEventExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CreateEventExtension;
+				INFOPLIST_KEY_CFBundleExecutable = CreateEventExtension;
+				INFOPLIST_KEY_CFBundleName = CreateEventExtension;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmirabelli.BackToNormal.CreateEventExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D122F3E268915A300F5BA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CreateEventExtension/CreateEventExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JT9WCF3HF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CreateEventExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CreateEventExtension;
+				INFOPLIST_KEY_CFBundleExecutable = CreateEventExtension;
+				INFOPLIST_KEY_CFBundleName = CreateEventExtension;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rmirabelli.BackToNormal.CreateEventExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7D20AF91264EBBB2003BF480 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -576,7 +747,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BackToNormal/BackToNormal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JT9WCF3HF;
+				DEVELOPMENT_TEAM = 35RU8AKZX8;
 				INFOPLIST_FILE = BackToNormal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -597,7 +768,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BackToNormal/BackToNormal.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JT9WCF3HF;
+				DEVELOPMENT_TEAM = 35RU8AKZX8;
 				INFOPLIST_FILE = BackToNormal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -741,6 +912,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7D122F42268915A300F5BA34 /* Build configuration list for PBXNativeTarget "CreateEventExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D122F3D268915A300F5BA34 /* Debug */,
+				7D122F3E268915A300F5BA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7D20AF64264EBBB0003BF480 /* Build configuration list for PBXProject "BackToNormal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

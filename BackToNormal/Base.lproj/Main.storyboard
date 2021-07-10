@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBZ-RM-6UU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBZ-RM-6UU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -127,31 +127,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayH-uU-HVD">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayH-uU-HVD">
                                 <rect key="frame" x="20" y="64" width="378" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Location" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9x-S1-89e">
-                                <rect key="frame" x="20" y="280" width="378" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t9x-S1-89e">
+                                <rect key="frame" x="20" y="148.5" width="378" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-1y-Del">
-                                <rect key="frame" x="20" y="106" width="378" height="166"/>
+                                <rect key="frame" x="20" y="106" width="378" height="34.5"/>
                             </datePicker>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-Va-fnM">
-                                <rect key="frame" x="0.0" y="422" width="414" height="162"/>
+                                <rect key="frame" x="0.0" y="290.5" width="414" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="GRS-Xy-sNW"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC1-QK-mWq">
-                                <rect key="frame" x="186" y="604" width="46" height="30"/>
+                                <rect key="frame" x="171.5" y="472.5" width="75" height="34.5"/>
                                 <state key="normal" title="Create"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Create"/>
+                                <connections>
+                                    <action selector="createButtonTapped:" destination="mD1-U7-ce5" eventType="touchUpInside" id="40B-vN-c8X"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Notes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP6-gJ-3KK">
-                                <rect key="frame" x="20" y="348" width="378" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DP6-gJ-3KK">
+                                <rect key="frame" x="20" y="216.5" width="378" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -167,7 +171,7 @@
                             <constraint firstAttribute="trailing" secondItem="IJU-Va-fnM" secondAttribute="trailing" id="EQp-y7-FUO"/>
                             <constraint firstItem="4T4-1y-Del" firstAttribute="leading" secondItem="ayH-uU-HVD" secondAttribute="leading" id="MUA-ch-tie"/>
                             <constraint firstItem="t9x-S1-89e" firstAttribute="top" secondItem="4T4-1y-Del" secondAttribute="bottom" constant="8" id="MUh-bl-QwT"/>
-                            <constraint firstItem="oKb-Ck-PEB" firstAttribute="bottom" secondItem="XC1-QK-mWq" secondAttribute="bottom" constant="228" id="aGS-Pf-txA"/>
+                            <constraint firstItem="oKb-Ck-PEB" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XC1-QK-mWq" secondAttribute="bottom" constant="20" id="aGS-Pf-txA"/>
                             <constraint firstItem="IJU-Va-fnM" firstAttribute="leading" secondItem="mG5-x4-VTa" secondAttribute="leading" id="byi-VJ-fdp"/>
                             <constraint firstItem="XC1-QK-mWq" firstAttribute="centerX" secondItem="DP6-gJ-3KK" secondAttribute="centerX" id="dqD-tU-UlC"/>
                             <constraint firstItem="t9x-S1-89e" firstAttribute="width" secondItem="ayH-uU-HVD" secondAttribute="width" id="oaK-d6-B3Y"/>
@@ -179,6 +183,14 @@
                             <constraint firstItem="ayH-uU-HVD" firstAttribute="leading" secondItem="oKb-Ck-PEB" secondAttribute="leading" constant="20" id="zwS-Yw-KI2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createButton" destination="XC1-QK-mWq" id="LxB-ot-Fbn"/>
+                        <outlet property="datePicker" destination="4T4-1y-Del" id="a2I-UI-wPg"/>
+                        <outlet property="eventTitleTextField" destination="ayH-uU-HVD" id="Ftk-sz-nLg"/>
+                        <outlet property="imageNamePicker" destination="IJU-Va-fnM" id="KBw-hM-BNI"/>
+                        <outlet property="locationTextField" destination="t9x-S1-89e" id="gGP-HC-sDc"/>
+                        <outlet property="notesTextField" destination="DP6-gJ-3KK" id="ffy-U4-8Ng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zmU-5b-zwP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
