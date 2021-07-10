@@ -32,7 +32,7 @@ class CreateEventViewController: UIViewController {
     @IBAction func createButtonTapped(_ sender: Any) {
         let event = Event(title: eventTitleTextField.text ?? eventTitleTextField.placeholder ?? "", date: datePicker.date, imageURL: nil, imageName: selectableBackgrounds[imageNamePicker.selectedRow(inComponent: 0)], location: locationTextField.text ?? "No location provided")
         event.saveToUserDefaults()
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true)
     }
 }
 

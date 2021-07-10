@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58560067269A40DF00E86548 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58560066269A40DF00E86548 /* Coordinator.swift */; };
 		7D122F24268915A300F5BA34 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D122F23268915A300F5BA34 /* Intents.framework */; };
 		7D122F27268915A300F5BA34 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D122F26268915A300F5BA34 /* IntentHandler.swift */; };
 		7D122F3C268915A300F5BA34 /* CreateEventExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D122F22268915A300F5BA34 /* CreateEventExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		58560066269A40DF00E86548 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7D122F22268915A300F5BA34 /* CreateEventExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CreateEventExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D122F23268915A300F5BA34 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		7D122F26268915A300F5BA34 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				7D20AF6C264EBBB0003BF480 /* AppDelegate.swift */,
 				7D20AF6E264EBBB0003BF480 /* SceneDelegate.swift */,
 				7D20AF70264EBBB0003BF480 /* ViewController.swift */,
+				58560066269A40DF00E86548 /* Coordinator.swift */,
 				7D93F268267B96B800FA05E5 /* CreateEventViewController.swift */,
 				7D20AF72264EBBB0003BF480 /* Main.storyboard */,
 				7D20AF9E264EBC59003BF480 /* Event.swift */,
@@ -475,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58560067269A40DF00E86548 /* Coordinator.swift in Sources */,
 				7D122F4826891A3800F5BA34 /* Intents.intentdefinition in Sources */,
 				7D20AF9F264EBC59003BF480 /* Event.swift in Sources */,
 				7D20AF71264EBBB0003BF480 /* ViewController.swift in Sources */,

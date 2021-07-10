@@ -12,6 +12,7 @@ import WidgetKit
 class ViewController: UIViewController {
 
     var events: [Event] = []
+    weak var coordinator: MainCoordinator?
 
     @IBOutlet var tableView: UITableView!
 
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
 
     @objc func addItem() {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "CreateEventViewController") {
-            navigationController?.pushViewController(vc, animated: true)
+            coordinator?.showCreateEvent()
         }
     }
 
