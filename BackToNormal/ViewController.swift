@@ -25,20 +25,8 @@ class ViewController: UIViewController {
             events = Event.getValues()
         }
         tableView.dataSource = self
-        navigationItem.rightBarButtonItem = editButtonItem
-    }
-
-    override func setEditing(_ editing: Bool, animated: Bool) {
-        super.setEditing(editing, animated: animated)
-        tableView.isEditing = editing
-        if (editing) {
-            // Add the + button
-            let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
-            navigationItem.leftBarButtonItem = addButton
-        } else {
-            navigationItem.leftBarButtonItem = nil
-            WidgetCenter.shared.reloadAllTimelines()
-        }
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
+        navigationItem.rightBarButtonItem = addButton
     }
 
     @objc func addItem() {
