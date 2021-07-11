@@ -9,7 +9,7 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>j7MGmW</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>20G5042c</string>
+	<string>21A5268h</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
 	<string>13A5155e</string>
 	<key>INIntentDefinitionToolsVersion</key>
@@ -132,6 +132,215 @@
 			<string>Custom</string>
 			<key>INIntentVerb</key>
 			<string>Create</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>create</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescription</key>
+			<string>Add an event to the system</string>
+			<key>INIntentDescriptionID</key>
+			<string>mNg5ep</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>4</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key>name,date,location</key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Add a new event</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>6enmIc</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>NewEvent</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key>name,date,location</key>
+				<dict>
+					<key>INIntentParameterCombinationSubtitle</key>
+					<string>Add a new event to the BTN system, launching the app to complete configuration</string>
+					<key>INIntentParameterCombinationSubtitleID</key>
+					<string>0zXZ1B</string>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Add a new event</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>ZtPlWe</string>
+				</dict>
+			</dict>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Name</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>Odu6wF</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>Sentences</string>
+						<key>INIntentParameterMetadataDefaultValueID</key>
+						<string>9l1tF2</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>name</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>name of the event</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>oEc3sB</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>1</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Date</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>rFpxY1</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>2</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataDateStyle</key>
+						<string>Full</string>
+						<key>INIntentParameterMetadataFormat</key>
+						<string>Relative</string>
+						<key>INIntentParameterMetadataTemplateID</key>
+						<string>8rZjgd</string>
+						<key>INIntentParameterMetadataTimeStyle</key>
+						<string>Full</string>
+						<key>INIntentParameterMetadataType</key>
+						<string>DateTime</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>date</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>date of the event</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>3gwA3R</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>4</integer>
+					<key>INIntentParameterType</key>
+					<string>DateComponents</string>
+				</dict>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Location</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>gpSwKk</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>3</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>Sentences</string>
+						<key>INIntentParameterMetadataDefaultValueID</key>
+						<string>ycGbVD</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>location</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>location of the event</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>by3Vzv</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>3</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+				</dict>
+			</array>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>New Event</string>
+			<key>INIntentTitleID</key>
+			<string>mKZsuQ</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Add</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

@@ -31,9 +31,7 @@ class ViewController: UIViewController {
     }
 
     @objc func addItem() {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CreateEventViewController") {
-            coordinator?.showCreateEvent()
-        }
+        coordinator?.showCreateEvent()
     }
 
 }
