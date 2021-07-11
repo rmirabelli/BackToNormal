@@ -55,5 +55,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        // here you'll be able to create an event with the userInfo
+        let name = userActivity.userInfo?["name"] as! String
+        let date = userActivity.userInfo?["date"] as! Date
+        let location = userActivity.userInfo?["location"] as! String
+        let event = Event(title: name, date: date, imageURL: nil, imageName: nil, location: location)
+        coordinator?.showCreateEvent(event: event)
+    }
+    
+    func scene(_ scene: UIScene, willContinueUserActivityWithType userActivityType: String) {
+        // here you can check on the type.
+        print(userActivityType)
+    }
+    
 }
 

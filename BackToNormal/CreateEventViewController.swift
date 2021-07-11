@@ -18,6 +18,8 @@ class CreateEventViewController: UIViewController {
     
     let selectableBackgrounds = ["bg0", "bg1", "bg2", "bg3", "bg4", "bg5", ]
     
+    var initialEvent: Event?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageNamePicker.dataSource = self
@@ -27,6 +29,14 @@ class CreateEventViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         eventTitleTextField.becomeFirstResponder()
+        if let event = initialEvent {
+            eventTitleTextField.text = event.title
+            locationTextField.text = event.location
+            datePicker.date = event.date
+            let imageName = selectableBackgrounds.randomElement() ?? ""
+            let index = selectableBackgrounds.firstIndex(of: imageName) ?? 0
+            imageNamePicker.selectRow(index, inComponent: 0, animated: false)
+        }
     }
     
     @IBAction func createButtonTapped(_ sender: Any) {

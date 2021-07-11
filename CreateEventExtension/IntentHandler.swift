@@ -40,3 +40,42 @@ class IntentHandler: INExtension, CreateEventIntentHandling {
     }
 
 }
+
+
+extension IntentHandler: NewEventIntentHandling {
+    func resolveName(for intent: NewEventIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
+        if let name = intent.name {
+            completion(.success(with: name))
+        } else {
+            completion(.needsValue())
+        }
+    }
+    
+    func resolveDate(for intent: NewEventIntent, with completion: @escaping (INDateComponentsResolutionResult) -> Void) {
+        if let date = intent.date {
+            completion(.success(with: date))
+        } else {
+            completion(.needsValue())
+        }
+    }
+    
+    func resolveLocation(for intent: NewEventIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
+        if let location = intent.location {
+            completion(.success(with: location))
+        } else {
+            completion(.needsValue())
+        }
+    }
+    
+    func handle(intent: NewEventIntent, completion: @escaping (NewEventIntentResponse) -> Void) {
+        let userActivity = NSUserActivity(activityType: "activity")
+        let name = intent.name ?? "empty name"
+        let date = intent.date?.date ?? Date()
+        let location = intent.location ?? "empty location"
+        userActivity.userInfo = ["name": name, "date": date, "location": location]
+        
+        let response = NewEventIntentResponse(code: .continueInApp, userActivity: userActivity)
+        completion(response)
+    }
+        
+}

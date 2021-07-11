@@ -34,10 +34,11 @@ class MainCoordinator: Coordinator {
         }
     }
     
-    func showCreateEvent() {
+    func showCreateEvent(event: Event? = nil) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "CreateEventViewController")
+        let vc = storyboard.instantiateViewController(withIdentifier: "CreateEventViewController") as! CreateEventViewController
+        vc.initialEvent = event
         listViewController?.present(vc, animated: true)
-        
     }
+    
 }
